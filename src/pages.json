@@ -1,0 +1,153 @@
+{
+  "easycom": {
+    "autoscan": true,
+    "custom": {
+      // uni-ui 规则如下配置
+      "^uni-(.*)": "@dcloudio/uni-ui/lib/uni-$1/uni-$1.vue"
+    }
+  },
+  "mp-weixin": {
+    "permission": {
+      "scope.userLocation": {
+        "desc": "获取当前所在地用于匹配地区服务"
+      }
+    }
+  },
+  "pages": [
+    //pages数组中第一项表示应用启动页
+    {
+      "path": "pages/home/index", //首页
+      "style": {
+        "navigationBarTitleText": "首页",
+
+        "onReachBottomDistance": 20,
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/home/components/location", 
+      "style": {
+        "navigationBarTitleText": "选择公证处"
+      }
+    },
+    {
+      "path": "pages/home/components/addPerson", 
+      "style": {
+        "navigationBarTitleText": "赋强公证"
+      }
+    },
+    {
+      "path": "pages/home/components/contract-info", 
+      "style": {
+        "navigationBarTitleText": "填写合同信息"
+      }
+    },
+    {
+      "path": "pages/home/components/query-material", 
+      "style": {
+        "navigationBarTitleText": "查询资料"
+      }
+    },
+    {
+      "path": "pages/home/components/notification", 
+      "style": {
+        "navigationBarTitleText": "消息通知"
+      }
+    },
+    {
+      "path": "pages/myself/index",
+      "style": {
+        "navigationBarTitleText": "我的"
+      }
+    },
+    {
+      "path": "pages/myself/components/edit-info", 
+      "style": {
+        "navigationBarTitleText": "修改信息"
+      }
+    },
+    {
+      "path": "pages/myself/components/supertow-list", 
+      "style": {
+        "navigationBarTitleText": "赋强公证业务列表"
+      }
+    },
+    {
+      "path": "pages/myself/components/order-detail", 
+      "style": {
+        "navigationBarTitleText": "订单详情页"
+      }
+    },
+    {
+      "path": "pages/myself/components/supplement-material", 
+      "style": {
+        "navigationBarTitleText": "补充材料"
+      }
+    },
+    {
+      "path": "pages/myself/components/order-payment",
+      "style": {
+        "navigationBarTitleText": "订单详情"
+      }
+    },
+    {
+      "path": "pages/myself/components/contacts-list",
+      "style": {
+        "navigationBarTitleText": "常用联系人"
+      }
+    },
+    {
+      "path": "pages/myself/components/edit-person",
+      "style": {
+        "navigationBarTitleText": "新增联系人"
+      }
+    },
+    {
+      "path": "pages/myself/components/real-name-auth",
+      "style": {
+        "navigationBarTitleText": "实名认证"
+      }
+    },
+    {
+      "path": "pages/login/index",
+      "style": {
+        "navigationBarTitleText": "登录"
+      }
+    },
+    {
+      "path": "pages/realnameAuthentication/index",
+      "style": {
+        "navigationBarTitleText": "实名认证"
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "智慧公证",
+    "navigationBarBackgroundColor": "#fff",
+    "backgroundColor": "#f7f8fa",
+    "backgroundColorContent": "#f7f8fa"
+  },
+  "tabBar": {
+    "color": "#a6aebd",
+    "selectedColor": "#1e2228",
+    "backgroundColor": "#ffffff",
+    "fontSize": "24rpx",
+    "iconWidth": "36rpx",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/home/index",
+        "text": "首页",
+        "iconPath": "static/tab/tab-icon1-1.png",
+        "selectedIconPath": "static/tab/tab-icon1.png"
+      },
+      {
+        "pagePath": "pages/myself/index",
+        "text": "我的",
+        "iconPath": "static/tab/tab-icon2-1.png",
+        "selectedIconPath": "static/tab/tab-icon2.png"
+      }
+    ]
+  }
+}
